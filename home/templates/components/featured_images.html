@@ -1,0 +1,48 @@
+{% load static %}
+
+<section class="banner__section section--padding">
+    <div class="container-fluid">
+        {% for rs in fimages %}
+            <div class="row mb--n28">
+                <div class="col-lg-5 col-md-order mb-28">
+                    <div class="banner__items">
+                        <a class="banner__items--thumbnail position__relative" href="{{ rs.image1_link }}"><img
+                                class="banner__items--thumbnail__img" src="{{ rs.image1.url }}"
+                                alt="banner-img">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-7 mb-28">
+                    <div class="row row-cols-lg-2 row-cols-sm-2 row-cols-1">
+                        <div class="col mb-28">
+                            <div class="banner__items">
+                                <a class="banner__items--thumbnail position__relative" href="{{ rs.image2_link }}"><img
+                                        class="banner__items--thumbnail__img"
+                                        src="{{ rs.image2.url }}"
+                                        alt="banner-img">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col mb-28">
+                            <div class="banner__items">
+                                <a class="banner__items--thumbnail position__relative" href="{{ rs.image3_link }}"><img
+                                        class="banner__items--thumbnail__img"
+                                        src="{{ rs.image3.url }}"
+                                        alt="banner-img">
+                                </a>
+                                <div class="banner__items--content">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="banner__items">
+                        <a class="banner__items--thumbnail position__relative" href="{{ rs.image4_link }}"><img
+                                class="banner__items--thumbnail__img banner__img--max__height"
+                                src="{{ rs.image4.url }}" alt="banner-img">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</section>

@@ -1,0 +1,24 @@
+{% if messages %}
+<div class="success-msg">
+{% for message in messages %}
+    <i class="fa fa-check"></i>
+    {{ message }}
+{% endfor %}
+</div>
+{% endif %}
+<style>
+    @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css');
+
+    .success-msg {
+        margin: 10px 0;
+        padding: 10px;
+        border-radius: 3px 3px 3px 3px;
+    }
+
+    .success-msg {
+        color: white;
+        background-color: #ee4b61;
+        text-align: center;
+    }
+
+</style>

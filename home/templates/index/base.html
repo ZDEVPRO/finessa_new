@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+ <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Asosiy - Finessa</title>
+        <meta name="description" content="Finessa.uz saytiga kirish." />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="Content-Language" content="uz" />
+
+	<meta property="og:description" content="Finessa - bu nafislik belgisi"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content="https://www.finessa.uz"/>
+	<meta property="og:site_name" content="Finessa.uz saytiga kirish"/>
+
+	<meta name="keywords" content="Ayollar" />
+	<meta name="keywords" content="Sumkasi" />
+	<meta name="keywords" content="Finessa" />
+	<meta name="keywords" content="O`zbekiston" />
+	<meta name="keywords" content="Sumka" />
+	<meta name="keywords" content="Sumkalar" />
+	<meta name="keywords" content="Dostavka" />
+	<meta name="keywords" content="yetkazib berish" />
+	<meta name="keywords" content="Finessa" />
+	<meta name="keywords" content="Finessa" />
+	<meta name="keywords" content="Finessa" />
+	<meta name="keywords" content="Finessa" />
+	<meta name="keywords" content="Finessa" />
+	<meta name="keywords" content="Finessa" />
+	<meta name="keywords" content="Finessa uz" />
+	<meta name="keywords" content="Finessa uz" />
+	<meta name="keywords" content="Finessa uz" />
+
+	<link rel="alternate" href="https://www.finessa.uz" hreflang="uz" />
+        <link rel="canonical" href="https://www.finessa.uz" />
+        <link rel="alternate" href="https://www.finessa.uz" hreflang="x-default" />
+
+        <link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/img/favicon.ico' %}">
+
+        <!-- ======= All CSS Plugins here ======== -->
+        <link rel="stylesheet" href="{% static 'assets/css/plugins/swiper-bundle.min.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/plugins/glightbox.min.css' %}">
+        <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+              rel="stylesheet">
+
+        <!-- Plugin css -->
+        <!-- <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css"> -->
+
+        <!-- Custom Style CSS -->
+        <link rel="stylesheet" href="{% static 'assets/css/styless.css' %}">
+
+    </head>
+<body>
+
+{% block header %}{% include 'components/header.html' %}{% endblock %}
+{% block index %}{% include 'index/index.html' %}{% endblock %}
+{% block footer %}{% include 'components/footer.html' %}{% endblock %}
+
+<!-- Scroll top bar -->
+<button id="scroll__top">
+    <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48"
+              d="M112 244l144-144 144 144M256 120v292"/>
+    </svg>
+</button>
+
+<script src="{% static 'assets/js/plugins/swiper-bundle.min.js' %}"></script>
+<script src="{% static 'assets/js/plugins/glightbox.min.js' %}"></script>
+
+<!-- Customscript js -->
+<script src="{% static 'assets/js/script.js' %}"></script>
+</body>
+</html>
